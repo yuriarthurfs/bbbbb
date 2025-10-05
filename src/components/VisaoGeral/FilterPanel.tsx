@@ -30,8 +30,9 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
 
   useEffect(() => {
     loadFilterOptions();
-  });
+  }, [selectedSystem]);
 
+  
   const loadFilterOptions = async () => {
     try {
       const [regionaisData, unidadesData, anosData] = await Promise.all([
