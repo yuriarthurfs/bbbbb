@@ -30,7 +30,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
 
   useEffect(() => {
     loadFilterOptions();
-  }, [selectedSystem]);
+  });
 
   const loadFilterOptions = async () => {
     try {
